@@ -24,6 +24,8 @@ weight_ids = {
     "qwe_cat.safetensors":"1R6El6uj90zDmrWBguAI4_-He6UBoS72M",    
 }
 
+os.makedirs('lora_weights', exist_ok=True)
+
 if len(os.listdir('lora_weights')) == 0:
 
     for file in weight_ids:
